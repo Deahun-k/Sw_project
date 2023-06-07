@@ -1,0 +1,94 @@
+.createPage {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 300px;
+    margin: auto;
+}
+
+#createList {
+    text-align: center;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+    border-collapse: collapse;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    font-size: 20px;
+}
+
+#createList>tbody>tr>td {
+    border-collapse: collapse;
+    border: 1px solid #575757;
+}
+
+.titleSearch {
+    width: 99%;
+    height: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.categorySearch {
+    width: 99%;
+    height: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nationSearch {
+    width: 99%;
+    height: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.genreSearch {
+    width: 99%;
+    height: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.priceSearch {
+    width: 99%;
+    height: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.saveBtn {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    top: 5px;
+    left: 850px;
+    bottom: 0;
+    right: 0;
+    background-color: #ffff;
+}
+
+.retouchPage {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 300px;
+    margin: auto;
+}
+
+.save2Btn {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    top: 5px;
+    left: 850px;
+    bottom: 0;
+    right: 0;
+    background-color: #ffff;
+}

@@ -1,0 +1,47 @@
+.savePage {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 300px;
+    margin: auto;
+}
+
+#saveList {
+    text-align: center;
+    margin: auto;
+    width: 900px;
+    height: 360px;
+    border-collapse: collapse;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    font-size: 20px;
+}
+
+#saveList>tbody>tr>td {
+    border-collapse: collapse;
+    border: 1px solid #575757;
+}
+
+.retouchBtn {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    top: 5px;
+    left: 795px;
+    bottom: 0;
+    right: 0;
+    background-color: #ffff;
+}
+.clearBtn {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    top: 5px;
+    left: 795px;
+    bottom: 0;
+    right: 0;
+    background-color: #ffff;
+}

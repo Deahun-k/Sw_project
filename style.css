@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    padding: 3px;
+    width: 750px;
+    margin: auto;
+    
+}
+
+h1 {
+    position: absolute;
+    text-align:left;
+    left: 0;
+    color: hotPink;
+}
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    height: 100vh; 
+    background: #0F2027;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+
+}
+
+/*slide*/
+.slide_wrap {
+
+}
+
+.slide_show {
+    width: 900px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 350px;
+    margin: auto;
+}
+
+.slide_show .slide_list {
+    position: relative;
+    overflow: hidden;
+    width: 3300px;
+    height: 300px;
+}
+
+.slide_show .slide_list>div {
+    float: left;
+    width: 290px;
+    padding: 5px;
+    height: 174px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.slide_show .slide_list>div:before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #fff;
+    font-family: 'RIDIBatang';
+}
+
+.slide_list>div:nth-child(3n+1)::before {
+    content: '01'
+}
+
+.slide_list>div:nth-child(3n+2)::before {
+    content: '02'
+}
+
+.slide_list>div:nth-child(3n+3)::before {
+    content: '03'
+}
+
+.slide_list>div:nth-child(3n+4)::before {
+    content: '04'
+}
+
+.slide_show .slide_list>div img {
+    width: 100%;
+    height: 275px;
+}
+
+.slide_btn {
+    position: absolute;
+    bottom: 69%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.slide_btn button {
+    background: rgba(0, 0, 0, .4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.slide_btn button:hover {
+    background: rgba(0, 0, 0, .8);
+    ;
+}
+
+.slide_btn .prev {
+    position: absolute;
+    right: 405px;
+}
+
+.slide_btn .next {
+    position: absolute;
+    left: 405px;
+}
+
+/*상단 매뉴 바*/
+.TopMenu {
+    position: fixed; right:0; top:0;
+    width: 300px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+.TopMenu>li {
+    width: 16.66%;
+    float: left;
+    text-align: right;
+    line-height: 40px;
+}
+
+.TopMenu a {
+    color: black;
+    font-size: 10px;
+}
+
+/*검색*/
+.search {
+    position: absolute;
+    width: 250px;
+    height: 10px;
+    left: 650px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+/*매뉴바*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px
+}
+
+.menu {
+    position: relative;
+    width: 750px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.menu>li {
+    width: 25%;
+    /*20*5=100%*/
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+
+.menu a {
+    color: black;
+}
+
+.submenu>li {
+    line-height: 50px;
+    background-color: #94a9ff;
+}
+
+.submenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.menu>li:hover {
+    background-color: #94a9ff;
+    transition-duration: 1s;
+    position: relative;
+    z-index: 2;
+}
+
+.menu>li:hover .submenu {
+    height: 250px;
+    /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+/*리스트*/
+.List {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    left: 0px;
+    top: 400px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.List>table {
+    margin: auto;
+    width: 900px;
+    height: 200px;
+    border-top: 2px solid skyblue;
+    border-bottom: 2px solid skyblue;
+    border-collapse: collapse;
+}
+
+.listFirst {
+    text-align: left;
+}
+
+.listSecond {
+    text-align: center;
+}
+
+.listThird {
+    text-align: right;
+}
+
+.BottomMenu {
+    position: absolute; 
+    bottom: 0px;
+    left: 0px;
+    top: 650px;
+    right: 0px;
+    margin: auto;
+    width: 900px;
+    height: 50px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+.BottomMenu>li {
+    width: 14%;
+    float: left;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+}
+
+.BottomMenu a {
+    color: black;
+    font-size: 15px;
+}
+
+.Bottom {
+    position: absolute;
+    left: 0px;
+    top: 850px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+}

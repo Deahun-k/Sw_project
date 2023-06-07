@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="create.css">
+    <link rel="stylesheet" type="text/css" href="save.css">
+    <title>TG24 Comics</title>
+</head>
+
+<body>
+    <!--고정부분-->
+    <div class="container">
+        <h1>TG24 Comics</h1>
+        <ul class="TopMenu">
+            <li>
+                <a href="*" class="HOME">HOME</a>
+            </li>
+            <li>
+                <a href="*">로그인</a>
+            </li>
+            <li>
+                <a href="*">회원가입</a>
+            </li>
+            <li>
+                <a href="*">고객센터</a>
+            </li>
+            <li>
+                <a href="*">제휴문의</a>
+            </li>
+            <li>
+                <a href="*">회사소개</a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li>
+                <a href="#" class="HOME2">HOME</a>
+            </li>
+            <li>
+                <a href="#">국내만화</a>
+                <ul class="submenu">
+                    <li><a href="#">순정만화</a></li>
+                    <li><a href="#">소년만화</a></li>
+                    <li><a href="#">성인만화</a></li>
+                    <li><a href="#">기획도서</a></li>
+                    <li><a href="#">만화잡지</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">일본만화</a>
+                <ul class="submenu">
+                    <li><a href="#">순정만화</a></li>
+                    <li><a href="#">소년만화</a></li>
+                    <li><a href="#">성인만화</a></li>
+                    <li><a href="#">기획도서</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">미국만화</a>
+                <ul class="submenu">
+                    <li><a href="#">DC코믹스마블</a></li>
+                    <li><a href="#">코믹스리터러리</a></li>
+                    <li><a href="#">그래픽노블</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--페이지 전환시 바뀌는 부분-->
+        <div class="indexPage">
+            <div class="slide_wrap">
+                <div class="slide_show">
+                    <p>▶추천도서</p>
+                    <div class="slide_list">
+                        <div class="slide"><img src="images/image1.png" alt="이미지"></div>
+                        <div class="slide"><img src="images/image2.png" alt="이미지"></div>
+                        <div class="slide"><img src="images/image3.png" alt="이미지"></div>
+                        <div class="slide"><img src="images/image4.png" alt="이미지"></div>
+                    </div>
+                </div>
+                <div class="slide_btn">
+                    <button class="prev">◁</button>
+                    <button class="next">▷</button>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" class="TextLine">
+                <button class="SearchBtn">검색</button>
+                <button class="CreateBtn">생성</button>
+            </div>
+            <div class="List">
+                <p>▶HOME</p>
+                <table>
+                    <th style="background-color: #A3FF8B;">제목</th>
+                    <th style="background-color: #A3FF8B;">카테고리</th>
+                    <th style="background-color: #A3FF8B;">가격</th>
+                    <tr style="background-color: #B6E4D1;">
+                        <td class="listFirst">이토 준지 결작집 11궤담</td>
+                        <td class="listSecond">공포</td>
+                        <td class="listThird">10,000원</td>
+                    </tr>
+                    <tr style="background-color: #A2BFB3;">
+                        <td class="listFirst">신의 지문 1~4(완)</td>
+                        <td class="listSecond">판타지</td>
+                        <td class="listThird">8,000원</td>
+                    </tr>
+                    <tr style="background-color: #B6E4D1;">
+                        <td class="listFirst">슬램덩크 오리지널 8</td>
+                        <td class="listSecond">스포츠</td>
+                        <td class="listThird">5,000원</td>
+                    </tr>
+                    <tr style="background-color: #A2BFB3;">
+                        <td class="listFirst">심야식당 26권</td>
+                        <td class="listSecond">일상</td>
+                        <td class="listThird">7,000원</td>
+                    </tr>
+                    <tr style="background-color: #B6E4D1;">
+                        <td class="listFirst">...</td>
+                        <td class="listSecond">...</td>
+                        <td class="listThird">...</td>
+                    </tr>
+                </table>
+            </div>
+            <ul class="BottomMenu">
+                <li>
+                    <a href="?">회사소개</a>
+                </li>
+                <li>
+                    <a href="?">인재채용</a>
+                </li>
+                <li>
+                    <a href="?">원고접수</a>
+                </li>
+                <li>
+                    <a href="?">제휴문의</a>
+                </li>
+                <li>
+                    <a href="?">고객센터</a>
+                </li>
+                <li>
+                    <a href="?">개인정보취급방침</a>
+                </li>
+                <li>
+                    <a href="?">이용약관</a>
+                </li>
+            </ul>
+            <ul class="Bottom">
+                Copyright c JSS Inc. All Rights Reserved
+            </ul>
+        </div>
+        <!--생성 페이지-->
+        <div class="createPage">
+            <p>▶책 생성</p>
+            <table id="createList">
+                <tr>
+                    <td style="background-color: lightgray;">제목</td>
+                    <td style="background-color: #ffff;"><input type="text" class="titleSearch"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">카테고리</td>
+                    <td style="background-color: #ffff;"><input type="text" class="categorySearch"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">국가</td>
+                    <td style="background-color: #ffff;">
+                        <select class="nationSearch">
+                            <option selected>국가를 선택하시오</option>
+                            <option>대한민국</option>
+                            <option>일본</option>
+                            <option>미국</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">장르</td>
+                    <td style="background-color: #ffff;">
+                        <select class="genreSearch">
+                            <option selected>장르를 선택하시오</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">가격</td>
+                    <td style="background-color: #ffff;"><input type="text" class="priceSearch"></td>
+                </tr>
+            </table>
+            <button class="saveBtn">저장</button>
+        </div>
+        <!--책 상세 페이지-->
+        <div class="savePage">
+            <p>▶책 상세</p>
+            <table id="saveList">
+                <tr>
+                    <td style="background-color: lightgray;">제목</td>
+                    <td style="background-color: #ffff; text-align: left;">슬램덩크 오리지널 8</td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">카테고리</td>
+                    <td style="background-color: #ffff; text-align: left;">스포츠</td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">국가</td>
+                    <td style="background-color: #ffff; text-align: left;">일본</td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">장르</td>
+                    <td style="background-color: #ffff; text-align: left;">소년만화</td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">가격</td>
+                    <td style="background-color: #ffff; text-align: left;">5,000원</td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">입력일</td>
+                    <td style="background-color: #ffff; text-align: left;">2023.03.12  13:22:23</td>
+                </tr>
+            </table>
+            <button class="retouchBtn">수정</button>
+            <button class="clearBtn">삭제</button>
+        </div>
+        <div class="retouchPage">
+            <p>▶책 수정</p>
+            <table id="createList">
+                <tr>
+                    <td style="background-color: lightgray;">제목</td>
+                    <td style="background-color: #ffff;"><input type="text" class="titleSearch"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">카테고리</td>
+                    <td style="background-color: #ffff;"><input type="text" class="categorySearch"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">국가</td>
+                    <td style="background-color: #ffff;">
+                        <select class="nationSearch">
+                            <option selected>국가를 선택하시오</option>
+                            <option>대한민국</option>
+                            <option>일본</option>
+                            <option>미국</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">장르</td>
+                    <td style="background-color: #ffff;">
+                        <select class="genreSearch">
+                            <option selected>장르를 선택하시오</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray;">가격</td>
+                    <td style="background-color: #ffff;"><input type="text" class="priceSearch"></td>
+                </tr>
+            </table>
+            <button class="save2Btn">저장</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="book.js"></script>
+</body>
+
+</html>
